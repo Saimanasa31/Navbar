@@ -1,0 +1,42 @@
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #000;
+}
+nav{
+    height: 100vh;
+    width: 50%;
+    min-width:400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+}
+a{
+    position: relative;
+    text-decoration: none;
+    font-family: 'quicksand',sans-serif;
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+a:after{
+    content:"";
+    position: absolute;
+    background-color:yellow;
+    height: 10px;
+    width: 0;
+    border-radius: 50%;
+    left: 40%;
+    bottom: -8px;
+    transition: 0.5s;
+}
+a:hover{
+    color:yellow;
+}
+a:hover:after{
+    width: 20px;
+}
